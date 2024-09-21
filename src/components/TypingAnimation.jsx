@@ -37,7 +37,7 @@ const TypingAnimation = () => {
 
     return (
         <div className='flex gap-1 drop-shadow-md'>
-            <h2 className='text-xl'>Im</h2><span className="text-xl underline decoration-coral">{text}</span>
+            <h2 className='text-xl'>I&apos;m</h2><span className="text-xl underline decoration-coral">{text}</span>
         </div>
     );
 };
