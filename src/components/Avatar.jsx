@@ -1,5 +1,5 @@
 import Image from "next/image";
-import avatarCla from '../assets/images/no-back-cl.png'
+import avatarCla from "../assets/images/no-back-cl.png"
 
 function Avatar() {
     return (
