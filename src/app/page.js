@@ -1,5 +1,7 @@
 import NavBar from "@/components/NavBar";
 import Landing from "@/components/Landing";
+import About from "@/components/About";
+import FeedbackForm from "@/components/Form";
 
 export default function Home() {
   return (
@@ -10,6 +12,12 @@ export default function Home() {
       <main className="">
         <section>
           <Landing />
+        </section>
+        <section>
+          <About />
+        </section>
+        <section>
+          <FeedbackForm />
         </section>
       </main>
     </div>

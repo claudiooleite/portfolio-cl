@@ -7,7 +7,7 @@ const TypingAnimation = () => {
     const [typingSpeed, setTypingSpeed] = useState(150);
 
     const roles = [
-        "a Front-end Developer",
+        "a Frontend Developer",
         "a dreamer",
         "a great team player",
         "always learning",
@@ -37,7 +37,7 @@ const TypingAnimation = () => {
 
     return (
         <div className='flex gap-1 drop-shadow-md'>
-            <h2 className='text-xl'>I'm</h2><span className="text-xl underline decoration-paynesGray">{text}</span>
+            <h2 className='text-xl'>I'm</h2><span className="text-xl underline decoration-coral">{text}</span>
         </div>
     );
 };

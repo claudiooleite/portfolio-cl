@@ -8,12 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        gunmetal: "#2d3142ff",
-        silver: "#bfc0c0ff",
-        coral: "#ef8354ff",
-        paynesGray: "#4f5d75ff",
+        background: "#2d3142",
+        foreground: "#F4F5F0",
+        gunmetal: "#2d3142",
+        silver: "#bfc0c0",
+        coral: "#ef8354",
+        paynesGray: "#4f5d75",
         lightGray: "#F4F5F0",
       },
       fontFamily: {

@@ -12,11 +12,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --gunmetal: "#2d3142ff";
-  --silver: "#bfc0c0ff";
-  --coral: "#ef8354ff";
-  --paynesGray: "#4f5d75ff";
-  --lightGray: "#F4F5F0";
+  --gunmetal: #2d3142ff;
+  --silver: #bfc0c0ff;
+  --coral: #ef8254ff;
+  --paynesGray: #4f5d75ff;
+  --lightGray: #F4F5F0ff;
 
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
@@ -33,9 +33,10 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--gunmetal);
+  background: var(--lightGray);
   font-family: var(--default-font);
+  font-weight: 400;
 }
 
 @layer utilities {
@@ -90,5 +91,3 @@ select {
 }
 
 /* Hero */
-
-
