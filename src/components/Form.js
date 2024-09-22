@@ -1,6 +1,6 @@
 // 'use client';
 
-export function FeedbackForm() {
+function FeedbackForm() {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -23,3 +23,5 @@ export function FeedbackForm() {
     </form>
   );
 }
+
+export default FeedbackForm;
