@@ -1,4 +1,4 @@
-import img from "../assets/images/Screenshot 2024-07-08 122805.png";
+import img from "../images/Acer_Wallpaper_04_3840x2400.jpg";
 
 export const projects = [
   {
@@ -10,7 +10,7 @@ export const projects = [
     // video: video1,
     stack: ["React", "JavaScript", "HTML", "CSS"],
     github: "https://github.com/claudiooleite/litle_lemon", // Fill in with GitHub link
-    category: "Web Development", // You can change the category as needed
+    category: "Web", // You can change the category as needed
   },
   {
     title: "Harmony Hub Music Store",
@@ -31,7 +31,7 @@ export const projects = [
     url: "https://pantrypall.netlify.app",
     stack: ["React", "API Integration", "JavaScript", "HTML", "CSS"],
     github: "https://github.com/claudiooleite/pantrypall", // Fill in with GitHub link
-    category: "Web Application",
+    category: "App",
   },
   {
     title: "Memory Gif Game",
@@ -41,7 +41,7 @@ export const projects = [
     url: "https://memory-gif-game.netlify.app",
     stack: ["JavaScript", "API Integration", "React", "HTML", "CSS"],
     github: "https://github.com/claudiooleite/memory_gif_game", // Fill in with GitHub link
-    category: "Games",
+    category: "Game",
   },
   {
     title: "React CV App",
@@ -51,7 +51,7 @@ export const projects = [
     url: "https://odincvapp.netlify.app/",
     stack: ["React", "JavaScript", "HTML", "CSS"],
     github: "https://github.com/claudiooleite/cv_app", // Fill in with GitHub link
-    category: "Web Development",
+    category: "Web",
   },
   {
     title: "Etch-a-sketch",
