@@ -13,7 +13,7 @@ function FeedbackForm() {
   };
 
   return (
-    <form name="feedback" onSubmit={handleFormSubmit}>
+    <form name="feedback" netlify onSubmit={handleFormSubmit}>
       <input type="hidden" name="form-name" value="feedback" />
       <input name="name" type="text" placeholder="Name" required />
       <input name="email" type="text" placeholder="Email (optional)" />
