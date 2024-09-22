@@ -2,6 +2,9 @@
 
 import { useState } from 'react';
 import { projects } from '@/assets/data/projects';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
 
 
@@ -36,7 +39,7 @@ function Projects() {
             </div>
 
             {/* Category filter list */}
-            <div className="flex flex-wrap gap-3 justify-center">
+            <div className="flex flex-wrap gap-4 justify-center my-6 ">
                 {categories.map((category) => (
                     <button
                         key={category}
@@ -53,25 +56,36 @@ function Projects() {
                 {filteredProjects.map((project) => (
                     <div
                         key={project.title}
-                        className={`project-card ${expandedProject === project.title ? 'expanded' : ''}`}
+                        className={`relative my-5 project-card ${expandedProject === project.title ? 'expanded' : ''}`}
                         onClick={() => handleProjectClick(project.title)}
                     >
                         {/* Project Card Content */}
                         <Image src={project.image} alt={project.title} className="project-image" />
                         <h2>{project.title}</h2>
-                        <h3>{project.category}</h3>
+                        <h3 className='absolute top-3 right-3 bg-silver/20 font-semibold text-sm rounded-lg p-2 w-fit text-coral'>
+                            {project.category}
+                        </h3>
 
                         {/* Expanded Project Details */}
                         {expandedProject === project.title && (
                             <div className="project-details">
                                 <p>{project.description}</p>
-                                <a href={project.url} target="_blank" rel="noopener noreferrer">Live URL</a>
-                                <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <ul>
+                                <ul className='flex flex-wrap gap-4 py-2'>
                                     {project.stack.map((tech) => (
-                                        <li key={tech}>{tech}</li>
+                                        <li key={tech} className='bg-silver/20 font-semibold text-sm rounded-lg p-2 w-fit'>
+                                            {tech}
+                                        </li>
                                     ))}
                                 </ul>
+                                <div className='flex gap-3 mb-6'>
+                                    <a className='shadow-md rounded-full p-1' href={project.url} target="_blank" rel="noopener noreferrer">
+                                        <FontAwesomeIcon icon={faLink} size='xl' style={{ color: '#ef8354' }} />
+                                    </a>
+                                    <a className='shadow-md rounded-full p-1' href={project.github} target="_blank" rel="noopener noreferrer">
+                                        <FontAwesomeIcon icon={faGithub} size='xl' style={{ color: '#ef8354' }} />
+                                    </a>
+                                </div>
+                                
                             </div>
                         )}
                     </div>
