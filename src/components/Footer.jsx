@@ -11,7 +11,7 @@ function Footer() {
             className='bg-[#e2e2e2] p-5'>
             <h1 className='p-3 text-3xl text-gunmetal font-bold font-heading text-center'>Claudio Leite</h1>
             <p className="mt-2 italic text-sm text-center">
-                "Crafting clean code and strong foundations—whether in apps or on the field."
+                &quot;Crafting clean code and strong foundations—whether in apps or on the field.&quot;
             </p>
             <ul className=' flex justify-center items-center gap-6 pt-5'>
                 <li className='bg-gunmetal p-2 rounded-full'>
