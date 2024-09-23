@@ -8,7 +8,9 @@ function DownloadButton() {
     };
 
     return (
-        <button className='' onClick={handleDownload}> Download Resume</button>
+        <div className="flex justify-center">
+            <button className='bg-gunmetal text-lightGray font-semibold py-2 px-4 rounded-md' onClick={handleDownload}> Download Resume</button>
+        </div>
     );
 }
 

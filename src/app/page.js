@@ -3,7 +3,7 @@ import Landing from "@/components/Landing";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
-import FeedbackForm from "@/components/Form";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
           <Projects />
         </section>
         <section>
-          <FeedbackForm />
+          <Contact/>
         </section>
       </main>
     </div>
