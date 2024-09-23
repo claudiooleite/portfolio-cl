@@ -15,20 +15,25 @@ function NavBar() {
         <>
             <button
                 onClick={onOpen}
-                className='z-40 fixed bg-gunmetal bg-opacity-100 p-2 rounded-full'>
-                <FontAwesomeIcon icon={faBars} style={{ filter: "brightness(0) invert(100%)" }} size='xl'
+                className='z-40 fixed top-3 right-0 bg-gunmetal bg-opacity-100 p-2  rounded-s-full'>
+                <FontAwesomeIcon
+                    icon={faBars}
+                    style={{ filter: "brightness(0) invert(100%)" }}
+                    size='l'
                     key={'xs'}
                 />
             </button>
+
             <Drawer
                 isOpen={isOpen}
-                placement='left'
+                placement='right'
                 onClose={onClose}
                 size={'xs'}
-
             >
                 <DrawerOverlay />
+
                 <DrawerContent>
+
                     <DrawerCloseButton />
 
                     <DrawerBody className='flex flex-col text-center gap-2 items-center mt-10'>
