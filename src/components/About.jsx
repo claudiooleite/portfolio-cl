@@ -22,7 +22,10 @@ function About() {
 
 
     return (
-        <section className="p-5 pt-7">
+        <section
+            id="about"
+            className="p-5 pt-7"
+        >
             <div>
                 <div className="flex items-center gap-2  mb-3">
                     <h1 className="text-3xl">About Me</h1>

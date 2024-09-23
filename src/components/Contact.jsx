@@ -4,7 +4,9 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
     return (
-        <div className="p-5 pt-7">
+        <div
+            id="contact"
+            className="p-5 pt-7">
             <div className="flex items-center gap-2  mb-3">
                 <h1 className="text-3xl">Contact</h1>
                 <div className="w-2/4 h-0.5 bg-gradient-to-r from-coral"></div>

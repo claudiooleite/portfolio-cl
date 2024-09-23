@@ -1,9 +1,11 @@
 'use client'
+
+
 function DownloadButton() {
     const handleDownload = () => {
         const a = document.createElement('a');
-        a.href = pdfUrl;
-        a.download = '../../public/assets/Claudio_Leite.pdf';
+        a.href = '/assets/Claudio_Leite.pdf';
+        a.download = 'Claudio_Leite.pdf';
         a.click();
     };
 
