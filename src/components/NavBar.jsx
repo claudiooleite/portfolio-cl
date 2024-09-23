@@ -15,7 +15,7 @@ function NavBar() {
         <>
             <button
                 onClick={onOpen}
-                className='z-40 fixed top-3 right-0 bg-gunmetal bg-opacity-100 p-2  rounded-s-full'>
+                className='z-40 fixed top-3 right-0 bg-gunmetal bg-opacity-100 p-3  rounded-s-full'>
                 <FontAwesomeIcon
                     icon={faBars}
                     style={{ filter: "brightness(0) invert(100%)" }}
