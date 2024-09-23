@@ -9,7 +9,7 @@ function Contact() {
                 <h1 className="text-3xl">Contact</h1>
                 <div className="w-2/4 h-0.5 bg-gradient-to-r from-coral"></div>
             </div>
-            <h2 className="font-medium leading-7 mb-3">Have a project in mind or just want to say hello? I'd love to hear from you. Let's connect and bring your ideas to life!</h2>
+            <h2 className="font-medium leading-7 mb-3">Have a project in mind or just want to say hello? I&apos;d love to hear from you. Let&apos;s connect and bring your ideas to life!</h2>
             <div className="flex items-center gap-3 py-2 mb-2">
                 <FontAwesomeIcon icon={faEnvelope} style={{ color: '#4f5d75ff' }} />
                 <div>

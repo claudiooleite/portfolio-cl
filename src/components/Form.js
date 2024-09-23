@@ -96,7 +96,7 @@ function FeedbackForm() {
         />
         {emailErr && (
           <p className="text-red-500">
-            Your email is invalid (must contain '@')
+            Your email is invalid (must contain &apos;@&apos;)
           </p>
         )}
 
