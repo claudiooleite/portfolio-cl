@@ -7,6 +7,7 @@ function Avatar() {
             <Image
                 className="w-full h-full object-cover "
                 src={avatarCla}
+                alt="Claudio, the owner oft the website picture"
             />
         </div>
     );
