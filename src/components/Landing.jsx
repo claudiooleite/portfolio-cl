@@ -21,7 +21,7 @@ function Landing() {
 
                 <ul className='flex items-center gap-6 pt-5 opacity-70'>
                     <li>
-                        <a href={''} target="_blank" rel="noopener noreferrer">
+                        <a href={'#sect1'} target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon
                                 icon={faGithubSquare}
                                 style={{ filter: "brightness(0) saturate(100%) invert(30%) sepia(4%) saturate(500%) hue-rotate(190deg)" }}
