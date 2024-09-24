@@ -1,8 +1,7 @@
 "use client";
 
-import { useRef } from 'react'
 import { useDisclosure } from '@chakra-ui/react'
-import { Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay } from '@chakra-ui/react'
+import { Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay } from '@chakra-ui/react'
 import DownloadButton from './DownloadBtn';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'

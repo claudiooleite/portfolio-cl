@@ -4,11 +4,11 @@ export const projects = [
   {
     title: "Restaurant Website",
     description:
-      "It was created as a part of the final assessment for the frontend development course. It shows a comprehensive understanding of frontend development concepts using React. The application is designed to handle table bookings, display weekly specials, and navigate through different sections of the restaurant's offerings.",
+      "Thi is a dynamic, responsive Web App developed as part of a Meta Professional Frontend course. It features a flexible navigation system that adapts to different screen sizes, a visually appealing hero section, and a showcase of special dishes using a sleek card layout. The app also includes a user-friendly booking form for table reservations and seamless page routing powered by React Router. Built with React, Chakra UI, and responsive CSS, this project demonstrates my ability to create engaging and functional web applications.",
     image: img,
     url: "https://restaurantbookingproject.netlify.app/",
     // video: video1,
-    stack: ["React", "JavaScript", "HTML", "CSS"],
+    stack: ["React", "JavaScript", "HTML", "CSS", "React Router"],
     github: "https://github.com/claudiooleite/litle_lemon", // Fill in with GitHub link
     category: "Web", // You can change the category as needed
   },
