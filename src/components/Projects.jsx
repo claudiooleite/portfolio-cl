@@ -66,7 +66,7 @@ function Projects() {
                             src={project.image}
                             alt={project.title}
                             className="project-image rounded-t-md"
-                            contain
+                            style={{ objectFit: "contain" }}
                         // special next prop
                         />
                         <div className='p-3'>
