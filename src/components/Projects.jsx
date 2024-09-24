@@ -45,7 +45,7 @@ function Projects() {
                 {categories.map((category) => (
                     <button
                         key={category}
-                        className={`category-button ${selectedCategory === category ? 'active' : ''} bg-silver/20 font-semibold text-sm  rounded-lg p-2 w-fit `}
+                        className={`category-button'} bg-silver/20 font-semibold text-sm  rounded-lg p-2 w-fit `}
                         onClick={() => handleCategoryClick(category)}
                     >
                         {category}
@@ -54,42 +54,45 @@ function Projects() {
             </div>
 
             {/* Project cards */}
-            <div className="project-list">
+            <div className="project-list ">
                 {filteredProjects.map((project) => (
                     <div
                         key={project.title}
-                        className={`relative my-5 project-card ${expandedProject === project.title ? 'expanded' : ''}`}
+                        className={`relative my-5 bg-lightGray rounded-md`}
                         onClick={() => handleProjectClick(project.title)}
                     >
                         {/* Project Card Content */}
-                        <Image src={project.image} alt={project.title} className="project-image" />
-                        <h2>{project.title}</h2>
-                        <h3 className='absolute top-3 right-3 bg-silver/20 font-semibold text-sm rounded-lg p-2 w-fit text-coral'>
-                            {project.category}
-                        </h3>
+                        <Image src={project.image} alt={project.title} className="project-image rounded-t-md" />
+                        <div className='p-3'>
+                            <h2 className='text-xl'>{project.title}</h2>
+                            <h3 className='absolute top-3 right-3 bg-silver/20 font-semibold text-sm rounded-lg p-2 w-fit text-coral'>
+                                {project.category}
+                            </h3>
 
-                        {/* Expanded Project Details */}
-                        {expandedProject === project.title && (
-                            <div className="project-details">
-                                <p>{project.description}</p>
-                                <ul className='flex flex-wrap gap-4 py-2'>
-                                    {project.stack.map((tech) => (
-                                        <li key={tech} className='bg-silver/20 font-semibold text-sm rounded-lg p-2 w-fit'>
-                                            {tech}
-                                        </li>
-                                    ))}
-                                </ul>
-                                <div className='flex gap-3 mb-6'>
-                                    <a className='shadow-md rounded-full p-1' href={project.url} target="_blank" rel="noopener noreferrer">
-                                        <FontAwesomeIcon icon={faLink} size='xl' style={{ color: '#ef8354' }} />
-                                    </a>
-                                    <a className='shadow-md rounded-full p-1' href={project.github} target="_blank" rel="noopener noreferrer">
-                                        <FontAwesomeIcon icon={faGithub} size='xl' style={{ color: '#ef8354' }} />
-                                    </a>
+                            {/* Expanded Project Details */}
+                            {expandedProject === project.title && (
+                                <div className="mt-2">
+                                    <p className='tracking-wide'>{project.description}</p>
+                                    <h3 className='mt-2 font-medium'>Stack:</h3>
+                                    <ul className='flex flex-wrap gap-4 py-2'>
+                                        {project.stack.map((tech) => (
+                                            <li key={tech} className='bg-silver/20 font-semibold text-sm rounded-lg p-2 w-fit'>
+                                                {tech}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <div className='flex gap-3 mb-2'>
+                                        <a className='shadow-md rounded-full p-1' href={project.url} target="_blank" rel="noopener noreferrer">
+                                            <FontAwesomeIcon icon={faLink} size='xl' style={{ color: '#ef8354' }} />
+                                        </a>
+                                        <a className='shadow-md rounded-full p-1' href={project.github} target="_blank" rel="noopener noreferrer">
+                                            <FontAwesomeIcon icon={faGithub} size='xl' style={{ color: '#ef8354' }} />
+                                        </a>
+                                    </div>
+
                                 </div>
-
-                            </div>
-                        )}
+                            )}
+                        </div>
                     </div>
                 ))}
             </div>
