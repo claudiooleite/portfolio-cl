@@ -62,10 +62,16 @@ function Projects() {
                         onClick={() => handleProjectClick(project.title)}
                     >
                         {/* Project Card Content */}
-                        <Image src={project.image} alt={project.title} className="project-image rounded-t-md" />
+                        <Image
+                            src={project.image}
+                            alt={project.title}
+                            className="project-image rounded-t-md"
+                            contain
+                        // special next prop
+                        />
                         <div className='p-3'>
                             <h2 className='text-xl'>{project.title}</h2>
-                            <h3 className='absolute top-3 right-3 bg-silver/20 font-semibold text-sm rounded-lg p-2 w-fit text-coral'>
+                            <h3 className='absolute top-3 right-3 bg-silver/60 font-semibold text-sm rounded-lg p-2 w-fit text-coral'>
                                 {project.category}
                             </h3>
 

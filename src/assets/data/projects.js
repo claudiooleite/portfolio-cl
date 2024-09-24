@@ -1,11 +1,11 @@
 import img from "../images/Acer_Wallpaper_04_3840x2400.jpg";
-
+import desktopLittleLemon from "@/assets/images/little-lemon/desktop-view-screenshot.png"
 export const projects = [
   {
     title: "Restaurant Website",
     description:
       "Thi is a dynamic, responsive Web App developed as part of a Meta Professional Frontend course. It features a flexible navigation system that adapts to different screen sizes, a visually appealing hero section, and a showcase of special dishes using a sleek card layout. The app also includes a user-friendly booking form for table reservations and seamless page routing powered by React Router. Built with React, Chakra UI, and responsive CSS, this project demonstrates my ability to create engaging and functional web applications.",
-    image: img,
+    image: desktopLittleLemon,
     url: "https://restaurantbookingproject.netlify.app/",
     // video: video1,
     stack: ["React", "JavaScript", "HTML", "CSS", "React Router"],
