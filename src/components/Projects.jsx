@@ -58,14 +58,14 @@ function Projects() {
                 {filteredProjects.map((project) => (
                     <div
                         key={project.title}
-                        className={`relative my-5 bg-lightGray rounded-md`}
+                        className={`relative my-5 bg-lightGray rounded-md flex flex-col`}
                         onClick={() => handleProjectClick(project.title)}
                     >
                         {/* Project Card Content */}
                         <Image
                             src={project.image}
                             alt={project.title}
-                            className="project-image rounded-t-md"
+                            className="project-image rounded-t-md self-center"
                             style={{ objectFit: "contain" }}
                         // special next prop
                         />

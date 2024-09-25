@@ -1,5 +1,7 @@
 import img from "../images/Acer_Wallpaper_04_3840x2400.jpg";
-import desktopLittleLemon from "@/assets/images/little-lemon/desktop-view-screenshot.png"
+import desktopLittleLemon from "@/assets/images/little-lemon/desktop-view-screenshot.png";
+import mobileHArmonyHub from "@/assets/images/harmony-hub/mobile-home.png";
+
 export const projects = [
   {
     title: "Restaurant Website",
@@ -15,12 +17,12 @@ export const projects = [
   {
     title: "Harmony Hub Music Store",
     description:
-      "The Harmony Hub Music Store is an e-commerce platform for purchasing musical instruments and accessories. It includes features like a product catalog, detailed product pages, a shopping cart, and a checkout process. This project was built to demonstrate my proficiency in frontend development and modern web technologies.",
-    image: img,
+      "E-commerce platform designed for purchasing musical instruments and accessories. It showcases a comprehensive understanding of front-end development, offering users a smooth shopping experience. The project includes a full product catalog, detailed product pages, a shopping cart, and an integrated checkout process. Stock updates dynamically on individual item pages.    image: img,",
+    image: mobileHArmonyHub,
     url: "https://harmonyhubproject.netlify.app/",
     // video: video2,
-    stack: ["React", "JavaScript", "HTML", "CSS"],
-    github: "https://github.com/claudiooleite/harmony_hub", // Fill in with GitHub link
+    stack: ["React", "JavaScript", "HTML", "CSS", "React Router"],
+    github: "https://github.com/claudiooleite/monogram-project", // Fill in with GitHub link
     category: "E-commerce",
   },
   {
