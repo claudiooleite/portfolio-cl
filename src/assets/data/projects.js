@@ -1,6 +1,7 @@
 import img from "../images/Acer_Wallpaper_04_3840x2400.jpg";
 import desktopLittleLemon from "@/assets/images/little-lemon/desktop-view-screenshot.png";
 import mobileHArmonyHub from "@/assets/images/harmony-hub/mobile-home.png";
+import mobilePAntrypall from "@/assets/images/pantry-pall/dektop-home-pantrypall..png";
 
 export const projects = [
   {
@@ -28,10 +29,10 @@ export const projects = [
   {
     title: "Pantry Pall",
     description:
-      "PantryPal is a smart recipe management app designed to help you make the most of the ingredients you have on hand. Whether you're a seasoned cook or just starting out, PantryPal lets you search for recipes based on what's in your pantry, track your dietary preferences, and discover new meal ideas with ease.",
-    image: img,
+      "Smart recipe management app that helps users discover meals based on their pantry items and dietary preferences. Whether you're looking for high-protein meals, fiber-rich options, or simply want to whip up something with what's on hand, PantryPal has you covered. With API integration, users can search, filter, and explore recipes with ease.",
+    image: mobilePAntrypall,
     url: "https://pantrypall.netlify.app",
-    stack: ["React", "API Integration", "JavaScript", "HTML", "CSS"],
+    stack: ["React", "API Integration", "Tailwindcss", "Next.js"],
     github: "https://github.com/claudiooleite/pantrypall", // Fill in with GitHub link
     category: "App",
   },
