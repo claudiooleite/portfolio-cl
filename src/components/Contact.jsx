@@ -13,7 +13,7 @@ function Contact() {
             </div>
             <h2 className="font-medium leading-7 mb-3">Have a project in mind or just want to say hello? I&apos;d love to hear from you. Let&apos;s connect and bring your ideas to life!</h2>
             <div className="flex items-center gap-3 py-2 mb-2">
-                <FontAwesomeIcon icon={faEnvelope} style={{ color: '#4f5d75ff' }} />
+                <FontAwesomeIcon icon={faEnvelope} size="xl" style={{ color: '#4f5d75ff' }} />
                 <div>
                     <h2 className="text-xl">Email</h2>
                     <p className="font-semibold">claudio.leite@hotmail.com</p>

@@ -6,11 +6,13 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ScrollButton from "@/components/ScrollButton";
 
 export default function Home() {
   return (
     <>
       <ChakraProvider>
+        <ScrollButton />
         <header className="flex justify-end">
           <NavBar />
         </header>

@@ -4,16 +4,16 @@ function Skills() {
     const { resume } = personalInfo
 
     return (
-        <div 
-        id="skills"
-        className="p-5 pt-7">
+        <div
+            id="skills"
+            className="p-5 pt-7">
             <div className="flex items-center gap-2  mb-3">
                 <h1 className="text-3xl">Skills</h1>
                 <div className="w-2/4 h-0.5 bg-gradient-to-r from-coral"></div>
             </div>
-            <div className="flex flex-wrap gap-x-4 ">
+            <div className="flex flex-wrap md:flex-nowrap justify-evenly gap-y-4">
                 {Object.keys(resume.skills).map((category, index) => (
-                    <div key={index} className="flex flex-col w-5/12">
+                    <div key={index} className="flex flex-col w-5/12 ">
                         <h2 className="text-xl">{category}</h2>
                         <ul >
                             {resume.skills[category].map((skill, i) => (

@@ -16,6 +16,22 @@ function Landing() {
                 alt="Background with a shot of a person from his back staring at the infinite"
 
             />
+            <nav className='hidden md:flex z-40 absolute  top-6 right-9  rounded-md px-3 py-1 '>
+                <ul className='flex gap-4 text-xl'>
+                    <li>
+                        <a href="#about">About </a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills </a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects </a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact </a>
+                    </li>
+                </ul>
+            </nav>
             <div className="absolute z-10 pl-5 flex flex-col gap-2">
                 <h1 className="text-3xl text-gunmetal font-bold font-heading ">Claudio Leite</h1>
                 <TypingAnimation />
