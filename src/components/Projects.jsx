@@ -12,6 +12,7 @@ function Projects() {
     const [selectedCategory, setSelectedCategory] = useState('All');
     const [expandedProject, setExpandedProject] = useState(null);
 
+
     // Get unique categories from the project data
     const categories = ['All', ...new Set(projects.map(project => project.category))];
 
@@ -25,6 +26,8 @@ function Projects() {
         setSelectedCategory(category);
         setExpandedProject(null); // Reset any expanded project when category changes
     };
+
+
 
     // Handle project card click to toggle expansion
     const handleProjectClick = (title) => {
@@ -45,7 +48,9 @@ function Projects() {
                 {categories.map((category) => (
                     <button
                         key={category}
-                        className={`category-button'} bg-silver/20 font-semibold text-sm  rounded-lg p-2 w-fit `}
+                        // Conditionally apply background color based on selectedCategory
+                        className={`category-button ${selectedCategory === category ? "bg-coral/20" : "bg-silver/20"
+                            } font-semibold text-sm rounded-lg p-2 w-fit`}
                         onClick={() => handleCategoryClick(category)}
                     >
                         {category}
@@ -68,7 +73,6 @@ function Projects() {
                             className="project-image rounded-t-md self-center"
                             height={300}
                             style={{ objectFit: "contain" }}
-                        // special next prop
                         />
                         <div className='p-3'>
 
@@ -77,9 +81,6 @@ function Projects() {
                             </h3>
 
                             <h2 className='text-xl text-center'>{project.title}</h2>
-
-
-
 
                             <div className="mt-2 hidden md:block">
                                 <p className='tracking-wide'>{project.description}</p>

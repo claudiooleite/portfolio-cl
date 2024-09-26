@@ -16,7 +16,7 @@ function Footer() {
             <ul className=' flex justify-center items-center gap-6 pt-5'>
                 <li className='bg-gunmetal p-2 rounded-full'>
                     <a
-                        href={''}
+                        href={'https://github.com/claudiooleite'}
                         target="_blank"
                         rel="noopener noreferrer">
                         <FontAwesomeIcon
@@ -28,7 +28,7 @@ function Footer() {
                 <li
                     className="flex items-center bg-gunmetal p-2 rounded-full">
                     <a
-                        href={''}
+                        href={'https://www.codewars.com/users/claudiooleite'}
                         target="_blank"
                         rel="noopener noreferrer">
                         <Image
@@ -42,7 +42,7 @@ function Footer() {
                     className='bg-gunmetal p-2 rounded-full'
                 >
                     <a
-                        href={''}
+                        href={'https://leetcode.com/u/claudiooleite/'}
                         target="_blank"
                         rel="noopener noreferrer">
                         <Image
@@ -56,7 +56,7 @@ function Footer() {
                     className='bg-gunmetal p-2 rounded-full'
                 >
                     <a
-                        href={''}
+                        href={'https://www.linkedin.com/in/claudio-leite-bb2a3262/'}
                         target="_blank"
                         rel="noopener noreferrer">
                         <FontAwesomeIcon

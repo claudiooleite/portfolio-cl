@@ -21,7 +21,7 @@ export const personalInfo = {
     },
   ],
   aboutMe: {
-    bio: "I'm a Frontend Developer who loves crafting clean, responsive, and intuitive user interfaces. My journey into tech is a bit unconventional. I come from a background in sports science, which gave me a strong sense of discipline, attention to detail, and a knack for problem-solving. I’m always eager to dive into new challenges, collaborate with others, and grow my skills in HTML, CSS, JavaScript, and React. Whether it’s coding or life, I believe in pushing boundaries and staying curious. Let's create something great together!",
+    bio: "I'm a Frontend Developer who loves creating, responsive, and intuitive user interfaces. My journey into tech is a bit unconventional. I come from a background in sports science, which gave me a strong sense of discipline, attention to detail, and the ability for problem-solving. I’m always eager to dive into new challenges, collaborate with others, and grow my skills in HTML, CSS, JavaScript, and React. Whether it’s coding or life, I believe in pushing boundaries and staying curious. Let's create something great together!",
     whatIDo: {
       WebDevelopment: {
         name: "Web Development",
