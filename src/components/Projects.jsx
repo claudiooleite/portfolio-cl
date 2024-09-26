@@ -58,7 +58,7 @@ function Projects() {
                 {filteredProjects.map((project) => (
                     <div
                         key={project.title}
-                        className={`relative my-5 bg-lightGray rounded-md flex flex-col border-coral/75 border-2`}
+                        className={`relative my-5 bg-lightGray rounded-md flex flex-col border-coral/75 border-2 pt-4`}
                         onClick={() => handleProjectClick(project.title)}
                     >
                         {/* Project Card Content */}
