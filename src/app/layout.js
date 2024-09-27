@@ -1,6 +1,6 @@
 import { Poppins, Raleway } from "next/font/google";
 import "./globals.css";
-import screenshotPortfolio from '@/assets/portfolio-claudioleite.netlify.png'
+import screenshotPortfolio from "@/assets/portfolio-claudioleite.netlify.png";
 
 // configuration icons
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -31,7 +31,7 @@ export const metadata = {
   keywords:
     "Portfolio, Front-end Developer, Web Development, React, Next.js, Tailwind CSS, Chakra UI",
   author: "Your Name",
-  website: "https://portfolio-claudioleite.netlify.app/",
+  website: "https://claudioleite.com/",
   screenshot: screenshotPortfolio,
 };
 
@@ -47,10 +47,7 @@ export default function RootLayout({ children }) {
         {/* Open Graph tags */}
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
-        <meta
-          property="og:image"
-          content={metadata.screenshot}
-        />
+        <meta property="og:image" content={metadata.screenshot} />
         <meta property="og:url" content={metadata.website} />
         <meta property="og:type" content="website" />
 
@@ -58,10 +55,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={metadata.title} />
         <meta name="twitter:description" content={metadata.description} />
-        <meta
-          name="twitter:image"
-          content={metadata.screenshot}
-        />
+        <meta name="twitter:image" content={metadata.screenshot} />
 
         <title>{metadata.title}</title>
       </head>
