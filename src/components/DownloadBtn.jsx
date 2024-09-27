@@ -4,8 +4,8 @@
 function DownloadButton() {
     const handleDownload = () => {
         const a = document.createElement('a');
-        a.href = '/assets/Claudio_Leite.pdf';
-        a.download = 'Claudio_Leite.pdf';
+        a.href = '/assets/claudio-leite-cv.pdf';
+        a.download = 'claudio-leite-cv.pdf';
         a.click();
     };
 
