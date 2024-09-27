@@ -85,42 +85,48 @@ function FeedbackForm() {
               autoComplete="off"
               value="feedback"
             />
+            {/* Responsive grid: single-column for sm, two-column for md and up */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <input
+                  name="name"
+                  type="text"
+                  placeholder="Your Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="border-2 focus:border-coral outline-none p-2 rounded w-full"
+                  required
+                />
+                {nameErr && (
+                  <p className="text-red-500">
+                    Your name is invalid (min 3 characters)
+                  </p>
+                )}
+              </div>
 
-            <input
-              name="name"
-              type="text"
-              placeholder="Your Name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="border-2 focus:border-coral outline-none p-2 rounded"
-              required
-            />
-            {nameErr && (
-              <p className="text-red-500">
-                Your name is invalid (min 3 characters)
-              </p>
-            )}
-
-            <input
-              name="email"
-              type="text"
-              placeholder="Your Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="border-2 focus:border-coral outline-none p-2 rounded"
-              required
-            />
-            {emailErr && (
-              <p className="text-red-500">
-                Your email is invalid (must contain &apos;@&apos;)
-              </p>
-            )}
+              <div>
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Your Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="border-2 focus:border-coral outline-none p-2 rounded w-full"
+                  required
+                />
+                {emailErr && (
+                  <p className="text-red-500">
+                    Your email is invalid (must contain &apos;@&apos;)
+                  </p>
+                )}
+              </div>
+            </div>
 
             <textarea
               name="message"
               placeholder="Your Message"
               autoComplete="off"
-              className="border-2 focus:border-coral outline-none p-2 rounded"
+              className="border-2 focus:border-coral outline-none p-2 rounded w-full"
             />
 
             <button

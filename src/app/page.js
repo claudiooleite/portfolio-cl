@@ -13,26 +13,32 @@ export default function Home() {
     <>
       <ChakraProvider>
         <ScrollButton />
-        <header className="flex justify-end">
-          <NavBar />
-        </header>
-        <main className="">
-          <section>
-            <Landing />
-          </section>
-          <section>
-            <About />
-          </section>
-          <section>
-            <Skills />
-          </section>
-          <section>
-            <Projects />
-          </section>
-          <section>
-            <Contact />
-          </section>
-        </main>
+        {/* The Landing section will have a full-width background image */}
+        <section>
+          <Landing />
+        </section>
+
+        {/* Apply max-width to center the rest of the content */}
+        <div className="w-full max-w-screen-xl mx-auto px-4">
+          <header>
+            <NavBar />
+          </header>
+
+          <main>
+            <section>
+              <About />
+            </section>
+            <section>
+              <Skills />
+            </section>
+            <section>
+              <Projects />
+            </section>
+            <section>
+              <Contact />
+            </section>
+          </main>
+        </div>
         <footer>
           <Footer />
         </footer>

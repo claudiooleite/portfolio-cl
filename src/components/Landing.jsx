@@ -23,16 +23,16 @@ function Landing() {
                 <nav className='hidden md:flex z-40 absolute  top-6 right-9  rounded-md px-3 py-1 '>
                     <ul className='flex gap-4 text-xl'>
                         <li>
-                            <a href="#about">About </a>
+                            <a href="#about"><h2>About</h2> </a>
                         </li>
                         <li>
-                            <a href="#skills">Skills </a>
+                            <a href="#skills"><h2>Skills</h2> </a>
                         </li>
                         <li>
-                            <a href="#projects">Projects </a>
+                            <a href="#projects"><h2>Projects </h2></a>
                         </li>
                         <li>
-                            <a href="#contact">Contact </a>
+                            <a href="#contact"><h2>Contact </h2></a>
                         </li>
                     </ul>
                 </nav>
