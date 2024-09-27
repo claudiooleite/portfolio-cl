@@ -1,4 +1,4 @@
-import localFont from "next/font/local";
+import { Poppins, Raleway } from "next/font/google";
 import "./globals.css";
 
 // configuration icons
@@ -9,15 +9,18 @@ import "@fortawesome/free-solid-svg-icons";
 
 config.autoAddCss = false;
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["400", "500", "600", "700", "900"],
+  display: "swap",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const raleway = Raleway({
+  subsets: ["latin"],
+  variable: "--font-raleway",
+  weight: ["400", "500", "600", "700", "900"],
+  display: "swap",
 });
 
 export const metadata = {
@@ -28,8 +31,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${poppins.variable} ${raleway.variable}`}>
         {children}
       </body>
     </html>

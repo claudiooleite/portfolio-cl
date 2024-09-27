@@ -17,9 +17,9 @@ module.exports = {
         lightGray: "#F4F5F0",
       },
       fontFamily: {
-        default: "var(--default-font)",
-        heading: "var(--heading-font)",
-        nav: "var(--nav-font)",
+        default: "var(--font-poppins)",
+        heading: "var(--font-raleway)",
+        nav: "var(--font-poppins)",
       },
     },
   },
