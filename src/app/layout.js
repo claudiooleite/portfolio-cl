@@ -1,6 +1,7 @@
 import { Poppins, Raleway } from "next/font/google";
 import "./globals.css";
 import screenshotPortfolio from "@/assets/portfolio-claudioleite.netlify.png";
+import favicon1 from "@/assets/favicons/favicon-32x32.png";
 
 // configuration icons
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -33,6 +34,7 @@ export const metadata = {
   author: "Your Name",
   website: "https://claudioleite.com/",
   screenshot: screenshotPortfolio,
+  favicon: favicon1,
 };
 
 export default function RootLayout({ children }) {
@@ -47,15 +49,15 @@ export default function RootLayout({ children }) {
         {/* Open Graph tags */}
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
-        <meta property="og:image" content={metadata.screenshot} />
+        <meta property="og:image" content={metadata.favicon} />
         <meta property="og:url" content={metadata.website} />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card tags */}
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content={metadata.favicon} />
         <meta name="twitter:title" content={metadata.title} />
         <meta name="twitter:description" content={metadata.description} />
-        <meta name="twitter:image" content={metadata.screenshot} />
+        <meta name="twitter:image" content={metadata.favicon} />
 
         <title>{metadata.title}</title>
       </head>
