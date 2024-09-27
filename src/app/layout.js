@@ -26,12 +26,12 @@ const raleway = Raleway({
 });
 
 export const metadata = {
-  title: "My Portfolio Website",
+  title: "Claudio Leite - Portfolio",
   description:
     "Welcome to my personal portfolio! Showcasing my skills and projects as a Front-end Developer with a focus on clean, organized code and a seamless user experience.",
   keywords:
     "Portfolio, Front-end Developer, Web Development, React, Next.js, Tailwind CSS, Chakra UI",
-  author: "Your Name",
+  author: "Claudio Leite",
   website: "https://claudioleite.com/",
   screenshot: screenshotPortfolio,
   favicon: favicon1,
