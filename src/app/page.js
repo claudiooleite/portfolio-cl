@@ -13,12 +13,12 @@ export default function Home() {
     <>
       <ChakraProvider>
         <ScrollButton />
-        {/* The Landing section will have a full-width background image */}
+        {/* The Landing section full-width background image */}
         <section>
           <Landing />
         </section>
 
-        {/* Apply max-width to center the rest of the content */}
+        {/* Apply max-width to center content */}
         <div className="w-full max-w-screen-xl mx-auto px-4">
           <header>
             <NavBar />
