@@ -4,6 +4,7 @@ import mobileHArmonyHub from "@/assets/images/harmony-hub/mobile-home.png";
 import mobilePAntrypall from "@/assets/images/pantry-pall/dektop-home-pantrypall..png";
 import dashboard from "@/assets/images/dashboard/desktop-dashboard.png";
 import sketch from "@/assets/images/sketch/sketch.png";
+import memeGeneratorImage from "@/assets/images/meme/meme-project-claudio.netlify.app_.png";
 
 export const projects = [
   {
@@ -65,5 +66,22 @@ export const projects = [
     stack: ["JavaScript", "DOM Manipulation", "HTML", "CSS"],
     github: "https://github.com/claudiooleite/etch-a-sketch",
     category: "Game",
+  },
+  {
+    title: "Meme Generator",
+    description:
+      "A fun meme generator built with React to practice API calls and state management. It fetches meme images from the Imgflip API, allowing users to generate random memes and customize the text on the top and bottom of the images.",
+    image: memeGeneratorImage,
+    url: "https://meme-project-claudio.netlify.app/",
+    stack: [
+      "React",
+      "JavaScript",
+      "API Integration",
+      "Imgflip API",
+      "useEffect",
+      "useState",
+    ],
+    github: "https://github.com/claudiooleite/meme-generator",
+    category: "App",
   },
 ];
