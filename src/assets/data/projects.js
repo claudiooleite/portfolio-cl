@@ -5,6 +5,7 @@ import mobilePAntrypall from "@/assets/images/pantry-pall/dektop-home-pantrypall
 import dashboard from "@/assets/images/dashboard/desktop-dashboard.png";
 import sketch from "@/assets/images/sketch/sketch.png";
 import memeGeneratorImage from "@/assets/images/meme/meme-project-claudio.netlify.app_.png";
+import tenzies from "@/assets/images/tenzies/tenzies-game-project-claudio.netlify.app_.png";
 
 export const projects = [
   {
@@ -83,5 +84,15 @@ export const projects = [
     ],
     github: "https://github.com/claudiooleite/meme-generator",
     category: "App",
+  },
+  {
+    title: "Tenzies",
+    description:
+      "Tenzies is a dice game built with React where players roll dice and hold numbers to match all dice values. It includes state management and uses React Confetti for an interactive winning animation.",
+    image: tenzies,
+    url: "https://tenzies-game-project-claudio.netlify.app/",
+    stack: ["React", "JavaScript", "State Management", "HTML", "CSS"],
+    github: "https://github.com/claudiooleite/tenzies-game",
+    category: "Game",
   },
 ];
