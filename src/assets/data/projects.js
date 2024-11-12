@@ -6,17 +6,18 @@ import dashboard from "@/assets/images/dashboard/desktop-dashboard.png";
 import sketch from "@/assets/images/sketch/sketch.png";
 import memeGeneratorImage from "@/assets/images/meme/meme-project-claudio.netlify.app_.png";
 import tenzies from "@/assets/images/tenzies/tenzies-game-project-claudio.netlify.app_.png";
+import vansImage from "@/assets/images/vans-life/desktop-view-screenshot.png";
 
 export const projects = [
   {
-    title: "Restaurant Website",
+    title: "Vans Rental Platform",
     description:
-      "Thi is a dynamic, responsive Web App developed as part of a Meta Professional Frontend course. It features a flexible navigation system that adapts to different screen sizes, a visually appealing hero section, and a showcase of special dishes using a sleek card layout. The app also includes a user-friendly booking form for table reservations and seamless page routing powered by React Router. Built with React, Chakra UI, and responsive CSS, this project demonstrates my ability to create engaging and functional web applications.",
-    image: desktopLittleLemon,
-    url: "https://restaurantbookingproject.netlify.app/",
-    // video: video1,
-    stack: ["React", "JavaScript", "HTML", "CSS", "React Router"],
-    github: "https://github.com/claudiooleite/litle_lemon",
+      "A web application designed for renting adventure vans and offering a platform for hosts to manage their van listings. This project demonstrates a comprehensive approach to user and host experiences, with features like van browsing, detailed listings, a host dashboard, and secure login for hosts. MirageJS is used to simulate a backend API for realistic data handling.",
+    image: vansImage,
+    url: "https://van-life-project-claudio.netlify.app/",
+    // video: vansVideo,  // Uncomment and replace if a video is available
+    stack: ["React", "React Router", "MirageJS", "JavaScript", "CSS"],
+    github: "https://github.com/claudiooleite/van-life",
     category: "Web",
   },
   {
@@ -30,6 +31,18 @@ export const projects = [
     github: "https://github.com/claudiooleite/monogram-project",
     category: "E-commerce",
   },
+  {
+    title: "Restaurant Website",
+    description:
+      "Thi is a dynamic, responsive Web App developed as part of a Meta Professional Frontend course. It features a flexible navigation system that adapts to different screen sizes, a visually appealing hero section, and a showcase of special dishes using a sleek card layout. The app also includes a user-friendly booking form for table reservations and seamless page routing powered by React Router. Built with React, Chakra UI, and responsive CSS, this project demonstrates my ability to create engaging and functional web applications.",
+    image: desktopLittleLemon,
+    url: "https://restaurantbookingproject.netlify.app/",
+    // video: video1,
+    stack: ["React", "JavaScript", "HTML", "CSS", "React Router"],
+    github: "https://github.com/claudiooleite/litle_lemon",
+    category: "Web",
+  },
+
   {
     title: "Pantry Pall",
     description:
